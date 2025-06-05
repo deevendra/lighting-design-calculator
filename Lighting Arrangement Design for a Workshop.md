@@ -1,4 +1,4 @@
-Lighting Arrangement Design for a Workshop 💡
+Lighting Arrangement Design for a Workshop 
 This repository features a Python-based tool I've created for designing the lighting arrangement and calculating fixture requirements for a workshop. This project represents a hands-on exploration in electrical design, applying fundamental illumination principles to streamline lighting planning.
 
 Project Overview
@@ -23,7 +23,7 @@ python lighting_calculator.py
 
 Review the Output: The script will print all the calculated values directly to your console. The current version uses predefined input parameters for a workshop design.
 
-🐍 Python Code
+Python Code
 Here's the Python code that powers the calculator:
 
 # Design of location/fixtures
@@ -59,23 +59,23 @@ print("flux emitted per fixture=", fe)
 
 wl = fe / ef
 print("wattage per fixture=", wl)
-# This calculation determines the required wattage. In a real-world scenario, you'd
-# select commercially available lights based on this calculated wattage.
+#This calculation determines the required wattage. In a real-world scenario, you'd
+#select commercially available lights based on this calculated wattage.
 
-# Actual illumination calculation
-# For demonstration, assuming a practical choice: 5 lights of 220 watts per fixture
+#Actual illumination calculation
+#For demonstration, assuming a practical choice: 5 lights of 220 watts per fixture
 w = 5 * 220
 print("actual wattage per fixture= ", w)
 
-# Calculate actual flux emitted based on chosen wattage and number of fixtures
+#Calculate actual flux emitted based on chosen wattage and number of fixtures
 fea = w * n * ef
 print("actual flux emitted= ", fea)
 
-# Calculate actual flux received on the working plane
+#Calculate actual flux received on the working plane
 fa = fea * e * m
 print("actual flux received = ", fa)
 
-# Calculate the actual flux density (illuminance) achieved
+#Calculate the actual flux density (illuminance) achieved
 Ea = fa / area
 print("actual flux density=", Ea)
 
