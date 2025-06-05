@@ -19,66 +19,6 @@ Save the Code: Copy all the Python code provided in the "Python Code" section be
 
 Run the Script: Open your terminal or command prompt, navigate to the directory where you saved the file, and execute it using Python:
 
-python lighting_calculator.py
-
-Review the Output: The script will print all the calculated values directly to your console. The current version uses predefined input parameters for a workshop design.
-
-Python Code
-Here's the Python code that powers the calculator:
-
-# Design of location/fixtures
-l = 60  # length of the room (in meters)
-b = 15  # width of the room (in meters)
-h = 5   # mounting height of light, i.e., difference between working plane and fixture height (in meters)
-shr = 1.5 # spacing between the fixtures to height ratio
-"""
-SHR is usually provided by manufacturer or standard values defined by different organizations.
-For this example, SHR is assumed to be 3:2, which implies a ratio of 1.5.
-"""
-s = shr * h
-area = l * b
-print("area=", area)
-print('spacing=', s)
-row = b / s
-col = l / s
-n = row * col
-print("rows=", row, "\n" "columns=", col)
-print("number of locations/fixtures=", n)
-
-# Design of lamps/lights
-E = 100 # required flux density in lux
-e = 0.4 # efficiency of the lamp (provided by manufacturer)
-ef = 16 # efficacy of the lamp in lumen/watt (provided by manufacturer)
-m = 0.8 # maintenance factor (usually taken as 0.8 for good conditions)
-
-f = E * area
-print("total flux recieved/required on working plane in lumen=", f)
-
-fe = f / (n * e * m)
-print("flux emitted per fixture=", fe)
-
-wl = fe / ef
-print("wattage per fixture=", wl)
-#This calculation determines the required wattage. In a real-world scenario, you'd
-#select commercially available lights based on this calculated wattage.
-
-#Actual illumination calculation
-#For demonstration, assuming a practical choice: 5 lights of 220 watts per fixture
-w = 5 * 220
-print("actual wattage per fixture= ", w)
-
-#Calculate actual flux emitted based on chosen wattage and number of fixtures
-fea = w * n * ef
-print("actual flux emitted= ", fea)
-
-#Calculate actual flux received on the working plane
-fa = fea * e * m
-print("actual flux received = ", fa)
-
-#Calculate the actual flux density (illuminance) achieved
-Ea = fa / area
-print("actual flux density=", Ea)
-
 📊 Sample Output
 Running the above script with its predefined parameters yields the following results:
 
