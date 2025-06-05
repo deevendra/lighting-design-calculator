@@ -1,7 +1,7 @@
 Lighting Arrangement Design for a Workshop 💡
 This repository features a Python-based tool I've created for designing the lighting arrangement and calculating fixture requirements for a workshop. This project represents a hands-on exploration in electrical design, applying fundamental illumination principles to streamline lighting planning.
 
-✨ Project Overview
+Project Overview
 This calculator helps determine:
 
 The optimal number and initial spacing of lighting fixtures.
@@ -12,7 +12,7 @@ The necessary flux emitted and wattage per fixture.
 
 The actual illuminance level achieved based on a chosen fixture wattage.
 
-🚀 How to Use
+How to Use
 To use this lighting design calculator, simply run the Python script.
 
 Save the Code: Copy all the Python code provided in the "Python Code" section below into a single file named lighting_calculator.py.
