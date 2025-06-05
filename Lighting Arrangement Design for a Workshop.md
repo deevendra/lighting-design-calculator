@@ -23,16 +23,27 @@ Run the Script: Open your terminal or command prompt, navigate to the directory 
 Running the above script with its predefined parameters yields the following results:
 
 area= 900
+
 spacing= 7.5
+
 rows= 2.0 
+
 columns= 8.0
+
 number of locations/fixtures= 16.0
+
 total flux recieved/required on working plane in lumen= 90000
+
 flux emitted per fixture= 17578.124999999996
+
 wattage per fixture= 1098.6328124999998
+
 actual wattage per fixture=  1100
+
 actual flux emitted=  281600.0
+
 actual flux received =  90112.0
+
 actual flux density= 100.12444444444445
 
 📐 Underlying Principles & Formulas
